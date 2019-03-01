@@ -303,29 +303,6 @@ if __name__ == '__main__':
     run_nn_backwards(nn, label, epochs, accuracy)
 
 
-    number = 0
-    all_values = test_data_list[number].split(',')
-    correct_label = int(all_values[0])
-    #print("correct label: {}".format(correct_label))
-    inputs = (np.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01
-    # query the network
-    outputs = nn.query(inputs)
-    # index of highest value corresponds to the label
-    label = np.argmax(outputs)
-    #print("Network's answer: {}".format(label))
-    # append correct or incorrect to list
-    if (label == correct_label):
-        print("Correct number predicted: {}".format(label))
-    else:
-        print("Wrong number predicted: {}, which should have been: {}".format(label, correct_label))
-
-
-
-    #print("types: {}, {}, {}, {}, {}, {}".format(
-    #    type(nn.hidden_nodes), type(nn.input_nodes), type(nn.learning_rate),
-    #    type(nn.output_nodes), type(nn.weight_hidden_output), type(nn.weight_input_hidden)))
-    #print(nn.toJSON())
-
 
 
 

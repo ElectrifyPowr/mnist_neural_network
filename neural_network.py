@@ -106,7 +106,7 @@ class neuralNetwork:
         return final_outputs
 
     # backquery the neural network
-    # we'll use the same termnimology to each item, 
+    # we'll use the same termnimology to each item,
     # eg target are the values at the right of the network, albeit used as input
     # eg hidden_output is the signal to the right of the middle nodes
     def backquery(self, targets_list):
@@ -306,24 +306,12 @@ if __name__ == '__main__':
 
 
 
+    with open("self_made_number1_edit.csv", "r") as f:
+        nummer = f.readlines()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    temp = nummer[0]
+    all_v = temp.split(',')
+    inputs = (np.asfarray(all_v[1:]) / 255.0 * 0.99) + 0.01
+    output = nn.query(inputs)
+    label = np.argmax(outputs)
+    print(label)

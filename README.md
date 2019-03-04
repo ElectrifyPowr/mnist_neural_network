@@ -36,8 +36,41 @@ In order to execute this python script, please follow the following steps:
 
 Once executed, the network will:
 <br>
-1. Train itself
-2. Test itself
+1. Train 
+2. Test 
 3. Print out its accuracy
-4. Show learned numbers (made by a back-query for each label, e.g. 0-9)
+4. Show learned numbers (made by a back-query for each label, e.g. 0-9), example is shown below
+<br><br>
+
+![LearnedNumbers](https://github.com/electrifypowr/mnist_neural_network/blob/master/learned_numbers.png)
+<br><br>
+
+## Visualizing of an Image from the Dataset
+Another script was written to visualize an image from the dataset.<br>
+To see an image execute the following command:<br>
+```python show_image.py <dataset> <image_number>```
+
+<br>
+Where <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><dataset></b> refers to the dataset that should be used, e.g. 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 = mnist_train.csv
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = mnist_test.csv
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 = rotated_mnist_train.csv
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 = rotatedmnist_test.csv
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><image_number></b> refers to the line of the csv file (where image 0 is the first image of the dataset)
+<br><br>
+
+
+
+
+
+
+
+
+
 

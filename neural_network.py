@@ -315,3 +315,16 @@ if __name__ == '__main__':
     output = nn.query(inputs)
     label = np.argmax(outputs)
     print(label)
+
+
+
+
+
+
+
+
+
+
+
+
+

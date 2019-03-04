@@ -45,7 +45,7 @@ Once executed, the network will:
 ![LearnedNumbers](https://github.com/electrifypowr/mnist_neural_network/blob/master/learned_numbers.png)
 <br><br>
 
-## Visualizing of an Image from the Dataset
+## Visualization of an Image from the Dataset
 Another script was written to visualize an image from the dataset.<br>
 To see an image execute the following command:<br>
 ```python show_image.py <dataset> <image_number>```

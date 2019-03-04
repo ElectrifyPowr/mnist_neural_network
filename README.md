@@ -52,7 +52,7 @@ To see an image execute the following command:<br>
 
 <br>
 Where <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><dataset></b> refers to the dataset that should be used, e.g. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>&lt;dataset&gt;</b> refers to the dataset that should be used, e.g. 
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 = mnist_train.csv
 <br>
@@ -62,7 +62,7 @@ Where <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 = rotatedmnist_test.csv
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><image_number></b> refers to the line of the csv file (where image 0 is the first image of the dataset)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>&lt;image_number&gt;</b> refers to the line of the csv file (where image 0 is the first image of the dataset)
 <br><br>
 
 

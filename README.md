@@ -32,7 +32,8 @@ In order to execute this python script, please follow the following steps:
 4. Execute the <b>generate_rotated_images.py</b> script, which will generate two more files under the <i>mnist_dataset</i> directory called <b>rotated_mnist_train.csv</b> and <b>rotated_mnist_test.csv</b> (containing for each original image 2 more images rotated to the left & right by 10 degrees)
 5. Change the hyperparameters as you like in the <b>neural_network.py</b> file
 6. Train & test the neural network with `python neural_network.py`
-<br>
+<br><br>
+
 Once executed, the network will:
 <br>
 1. Train itself

@@ -18,7 +18,6 @@ from scipy.special import expit # sigmoid function
 from scipy.special import logit # inverse sigmoid function
 import matplotlib.pyplot as plt
 import sys
-import json
 
 
 
@@ -137,10 +136,6 @@ class neuralNetwork:
 
         return inputs
 
-    def toJSON(self):
-        return json.dumps(self, default=lambda o: o.__dict__,
-            sort_keys=True, indent=4)
-
 
 
 def print_progress(current_index, total_number):
@@ -150,7 +145,7 @@ def print_progress(current_index, total_number):
         progressBar(progress, 1)
         #print("Progress: {}%".format(progress_percentage))
 
-# prints: Percent: [------------->      ] 69%
+# prints: Progress: [=============>      ] 69%
 def progressBar(value, endvalue, bar_length=20):
         percent = float(value) / endvalue
         arrow = '=' * int(round(percent * bar_length)-1) + '>'
@@ -302,19 +297,6 @@ if __name__ == '__main__':
     label = 0
     run_nn_backwards(nn, label, epochs, accuracy)
 
-
-
-
-
-    with open("self_made_number1_edit.csv", "r") as f:
-        nummer = f.readlines()
-
-    temp = nummer[0]
-    all_v = temp.split(',')
-    inputs = (np.asfarray(all_v[1:]) / 255.0 * 0.99) + 0.01
-    output = nn.query(inputs)
-    label = np.argmax(outputs)
-    print(label)
 
 
 

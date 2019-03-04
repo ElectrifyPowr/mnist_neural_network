@@ -33,9 +33,10 @@ In order to execute this python script, please follow the following steps:
 5. Change the hyperparameters as you like in the <b>neural_network.py</b> file
 6. Train & test the neural network with `python neural_network.py`
 <br>
-Once executed, the network will:<br>
-1. Train
-2. Test
-3. Print out accuracy
+Once executed, the network will:
+<br>
+1. Train itself
+2. Test itself
+3. Print out its accuracy
 4. Show learned numbers (made by a back-query for each label, e.g. 0-9)
 

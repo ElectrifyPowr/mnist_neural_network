@@ -65,6 +65,9 @@ Where <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>&lt;image_number&gt;</b> refers to the line of the csv file (where image 0 is the first image of the dataset)
 <br><br>
 
+Below is an image when running `python show_image.py 0 0` (note that your image might be different since the images are shuffled after generating them)<br>
+![LearnedNumbers](https://github.com/electrifypowr/mnist_neural_network/blob/master/image_of_5.png)
+
 
 
 

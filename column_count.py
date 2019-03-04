@@ -7,7 +7,14 @@
 #
 #==================================================================
 """
- describe here what the file does
+
+    To check whether you have the correct number of columns in a dataset in a specific row
+    this script takes 2 arguments:
+        1. the file_name
+        2. the row
+
+    This is helpful when adding your own images.
+
 """
 
 import sys
